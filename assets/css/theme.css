@@ -83,7 +83,7 @@ html, body {
 
 body {
 	position: relative;
-	background-color: #0a0a0a;
+	background-color: #000000;
 	line-height: 1.7;
 	font-size: 19px;
 	font-weight: normal;
@@ -2024,7 +2024,7 @@ body:not(.tt-boxed) .page-header-inner,
 	left: -1px;
 	bottom: -1px;
 	right: -1px;
-	background-color: #040404;
+	background-color: #000000;
 	z-index: 1;
 	opacity: 0;
 }
@@ -4788,7 +4788,7 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
 		left: -1px;
 		bottom: -1px;
 		right: -1px;
-		background-color: #040404;
+		background-color: #000000;
 		opacity: .7;
 	}
 }
@@ -6520,7 +6520,7 @@ body.tt-light-bg-on .tt-header-tools .tt-hti-btn {
 	left: 0px;
 	bottom: 0px;
 	right: 0px;
-	background-color: #040404;
+	background-color: #000000;
 	opacity: .1;
 }
 .tt-pn-image img {
@@ -9296,7 +9296,7 @@ body.tt-sliding-sidebar-open .tt-sliding-sidebar-close {
 		left: -1px;
 		bottom: -1px;
 		right: -1px;
-		background-color: #040404;
+		background-color: #000000;
 		opacity: .2;
 	}
 }

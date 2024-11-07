@@ -10,7 +10,7 @@
 	<head>
 
 		<!-- Title -->
-		<title>Cipriano World</title>
+		<title>Ciprianoworld</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -62,7 +62,15 @@
 
 			<!-- Begin page transition (do not remove!!!) 
 			=========================== -->
-
+			<div id="page-transition">
+				<div class="ptr-overlay"></div>
+				<div class="ptr-preloader">
+					<div class="ptr-prel-content">
+						<!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
+						<img src="assets/img/logo-light.png" class="ptr-prel-image tt-logo-light" alt="Logo">
+					</div> <!-- /.ptr-prel-content -->
+				</div> <!-- /.ptr-preloader -->
+			</div>
 			<!-- End page transition -->
 
 			<!-- Begin magic cursor 
@@ -72,14 +80,6 @@
 			</div>
 			<!-- End magic cursor -->
 
-			<!-- Begin noise background -->
-			<div class="bg-noise"></div>
-			<!-- End noise background --> 
-
-
-			<!-- *****************************************
-			*********** Begin scroll container *********** 
-			****************************************** -->
 			<div id="scroll-container"> 
 				
 				<!-- ===================
@@ -114,7 +114,21 @@
 					<div id="page-header" class="ph-full ph-cap-xxlg ph-center ph-image-cropped ph-image-cover-2 ph-content-parallax">
 						<div id="container3D"></div>
 						<script type="module" src="js/main.js"></script>
+						
 
+
+
+						<!-- End scroll down circle -->
+
+						<!-- Begin made with love 
+						========================== -->
+						<div class="made-with-love ph-appear">
+							<div class="mwl-inner">
+								<div class="mwl-text">Scroll down</div>
+								
+							</div>
+						</div>
+						<!-- End made with love -->
 						
 					</div>
 					<!-- End page header -->
@@ -583,7 +597,31 @@
 						============================ 
 						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 						-->
+						<div class="tt-section padding-bottom-xlg-150">
+							<div class="tt-section-inner tt-wrap">
 
+								<!-- Begin page nav 
+								==================== 
+								* Use class "tt-pn-stroke" to enable title stroke style.
+								* Use class "tt-pn-scroll" to enable hover title scroll. Note: If "tt-pn-hover-title" text is wider than "tt-pn-link" then it scrolls by default. The longer the text, the faster it scrolls.
+								-->
+								<div class="tt-page-nav tt-pn-scroll">
+									<a href="contact.html" class="tt-pn-link anim-fadeinup">
+										<div class="tt-pn-title">Let's talk</div>
+										<div class="tt-pn-hover-title">Let's talk</div>
+									</a> <!-- /.tt-pn-link -->
+
+									<div class="tt-pn-subtitle anim-fadeinup">Get in Touch</div>
+
+									<!-- Use if destination page contains page header image -->
+									<div class="tt-pn-image">
+										<img src="assets/img/page-header/ph-3.jpg" alt="image">
+									</div>
+								</div>
+								<!-- End page nav -->
+
+							</div> <!-- /.tt-section-inner -->
+						</div>
 						<!-- End tt-section -->
 
 
@@ -617,7 +655,7 @@
 								<div class="footer-col-inner">
 
 									<div class="tt-copyright">
-										© Copyright - <a href="https://themetorium.net" target="_blank" rel="noopener" class="tt-link">sharpstudiollc.com</a>
+										© Copyright - <a href="https://themetorium.net" target="_blank" rel="noopener" class="tt-link">Themetorium.net</a>
 									</div>
 
 								</div> <!-- /.footer-col-inner -->
