@@ -2089,10 +2089,10 @@ body:not(.tt-boxed) .page-header-inner,
 	height: 35vh;
 	z-index: 3;
 	pointer-events: none;
-	background: rgb(13,13,13);
-	background: -moz-linear-gradient(0deg, rgba(13,13,13,1) 0%, rgba(13,13,13,0) 100%);
-	background: -webkit-linear-gradient(0deg, rgba(13,13,13,1) 0%, rgba(13,13,13,0) 100%);
-	background: linear-gradient(0deg, rgba(13,13,13,1) 0%, rgba(13,13,13,0) 100%);
+	background: #020202;
+	background: -moz-linear-gradient(0deg,#020202 0%, rgba(13,13,13,0) 100%);
+	background: -webkit-linear-gradient(0deg, #020202 0%, rgba(13,13,13,0) 100%);
+	background: linear-gradient(0deg, #020202 0%, rgba(13,13,13,0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0d0d",endColorstr="#0d0d0d",GradientType=1);
 }
 #page-header.ph-bg-image .ph-image-inner {
