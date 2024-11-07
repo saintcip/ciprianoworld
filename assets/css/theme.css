@@ -1952,7 +1952,7 @@ body:not(.tt-boxed) .page-header-inner,
 ===================== */
 .ph-image {
 	position: absolute;
-	top: 160px;
+	top: 10px;
 	right: 18vw;
 	width: clamp(340px, 18vw, 800px);
 	z-index: 2;
