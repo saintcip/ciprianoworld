@@ -7103,7 +7103,7 @@ body:not(.is-mobile) .tt-content-carousel.cc-hide-pagination .tt-cc-pagination {
 /* ------------------------------------------------------------- */
 
 button {
-	background-color: transparent;
+	background-color: #fff;
 	cursor: pointer;
 	border: none;
 }
@@ -9990,10 +9990,7 @@ body:not(.tt-boxed) .tt-footer-inner,
 		display: none;
 	}
 
-	body{
-		background-color: grey;
-	}
-	
+
 	#popup-overlay {
 		display: none;
 		position: fixed;
@@ -10004,7 +10001,7 @@ body:not(.tt-boxed) .tt-footer-inner,
 		background: rgba(0, 0, 0, 0.95);
 		z-index: 999;
 	}
-	
+
 	#popup-box {
 		position: absolute;
 		top: 50%;
@@ -10018,13 +10015,13 @@ body:not(.tt-boxed) .tt-footer-inner,
 		max-width: 435px;
 		height: auto;
 	}
-	
+
 	#popup-box h2 {
 		margin: 0;
 		padding: 0;
 		margin-bottom: 10px;
 	}
-	
+
 	#popup-box button {
 		margin: 10px;
 		padding: 5px 10px;
