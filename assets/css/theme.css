@@ -7103,9 +7103,15 @@ body:not(.is-mobile) .tt-content-carousel.cc-hide-pagination .tt-cc-pagination {
 /* ------------------------------------------------------------- */
 
 button {
-	background-color: #fff;
+	background-color: #ffffff00;
+	
 	cursor: pointer;
 	border: none;
+}
+
+.branco {
+	color: #fff;
+
 }
 
 .tt-btn {
