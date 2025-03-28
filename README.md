@@ -1,6 +1,6 @@
 # 👋 Hey, I'm Marcos Cipriano  
 
-### 💻 Developer | 🎨 Creative | 📈 Business Owner  
+### 📈 Business Owner | 💻 Developer | 🎨 Creative  
 
 I'm the founder of **Sharp Studio**, a development and creative studio based in **Los Angeles**. I specialize in crafting seamless digital experiences by merging **technology and design**.  
 
@@ -37,9 +37,10 @@ I'm the founder of **Sharp Studio**, a development and creative studio based in 
 I'm available for commissions and freelance projects. Feel free to reach out!  
 
 📩 **Email:** [sharpstudiollc@gmail.com](mailto:sharpstudiollc@gmail.com)  
-🔗 **Website:** [Coming Soon]  
+🌐 **Portfolio:** [ciprianoworld.com](https://ciprianoworld.com)  
+🏢 **Sharp Studio:** [sharpstudiollc.com](https://sharpstudiollc.com)  
 🛠 **GitHub:** [github.com/ciprianoworld](https://github.com/ciprianoworld)  
 
 ---
 
-✨ *Let's build something amazing together!* 🚀
+✨ *Let's build something amazing together!* 🚀  
