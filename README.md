@@ -15,6 +15,7 @@ I'm the founder of **Sharp Studio**, a development and creative studio based in 
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SCSS" width="50" height="50"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" width="50" height="50"/>
 </p>
 
 ### ⚙️ Backend  
@@ -27,6 +28,7 @@ I'm the founder of **Sharp Studio**, a development and creative studio based in 
 ### 🗄️ Database  
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="50" height="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="50" height="50"/>
 </p>
 
 ---
@@ -35,9 +37,9 @@ I'm the founder of **Sharp Studio**, a development and creative studio based in 
 I'm available for commissions and freelance projects. Feel free to reach out!  
 
 📩 **Email:** [sharpstudiollc@gmail.com](mailto:sharpstudiollc@gmail.com)  
-🔗 **Website:** [[Coming Soon](https://ciprianoworld.com/)]  
+🔗 **Website:** [Coming Soon]  
 🛠 **GitHub:** [github.com/ciprianoworld](https://github.com/ciprianoworld)  
 
 ---
 
-✨ *Let's build something amazing together!* 🚀  
+✨ *Let's build something amazing together!* 🚀
