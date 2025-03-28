@@ -33,12 +33,25 @@ I'm the founder of **Sharp Studio**, a development and creative studio based in 
 
 ---
 
+## 🤖 AI & Cloud Projects  
+
+### **Vox AI**  
+🚀 I'm currently developing **Vox AI**, an innovative **AI-driven** platform utilizing:  
+- **AWS** for cloud infrastructure  
+- **Google Flow** for AI automation  
+- Advanced **machine learning** integrations  
+
+🌐 Check out **Vox AI** here: [vox.sharpstudiollc.com](https://vox.sharpstudiollc.com)  
+
+---
+
 ## 📬 Let's Work Together!  
 I'm available for commissions and freelance projects. Feel free to reach out!  
 
 📩 **Email:** [sharpstudiollc@gmail.com](mailto:sharpstudiollc@gmail.com)  
 🌐 **Portfolio:** [ciprianoworld.com](https://ciprianoworld.com)  
 🏢 **Sharp Studio:** [sharpstudiollc.com](https://sharpstudiollc.com)  
+🔗 **LinkedIn:** [linkedin.com/in/marcoscip](https://www.linkedin.com/in/marcoscip/)  
 🛠 **GitHub:** [github.com/ciprianoworld](https://github.com/ciprianoworld)  
 
 ---
