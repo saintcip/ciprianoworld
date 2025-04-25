@@ -1,3 +1,0 @@
-
-### TESTE
-Bom dia
