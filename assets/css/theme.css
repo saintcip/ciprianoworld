@@ -9816,18 +9816,36 @@ body:not(.tt-boxed) .tt-footer-inner,
 	color: #888;
 }
 #tt-footer .tt-copyright a {
-	color: #888;
+        color: #888;
 }
 #tt-footer .tt-copyright a:hover {
+}
+
+.footer-social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 18px;
+}
+
+.footer-social-link {
+        color: #888;
+        font-size: 20px;
+        transition: color 0.3s ease;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+        color: #fff;
 }
 
 
 /* For desktop only 
 ==================== */
 @media (min-width: 1025px) {
-	#tt-footer {
-		padding: 30px 0;
-	}
+        #tt-footer {
+                padding: 30px 0;
+        }
 	#tt-footer.footer-absolute {
 		position: absolute;
 		left: 0;
@@ -9948,6 +9966,12 @@ body:not(.tt-boxed) .tt-footer-inner,
 		opacity: 1;
 		visibility: visible;
 	}
+}
+
+@media (max-width: 1024px) {
+        #container3D {
+                display: none !important;
+        }
 }
 
 /* For smaller screens only 
