@@ -1,44 +1,68 @@
 const popupOverlay = document.getElementById('popup-overlay');
+const calendlyOverlay = document.getElementById('calendly-popup');
+const scheduleCallButton = document.getElementById('schedule-call-button');
 
-function setPopupVisibility(isVisible) {
-    if (!popupOverlay) {
+const overlays = [
+    { element: popupOverlay, closeSelector: '[data-popup-close]' },
+    { element: calendlyOverlay, closeSelector: '[data-calendly-close]' }
+];
+
+function setOverlayVisibility(overlay, isVisible) {
+    if (!overlay) {
         return;
     }
 
-    popupOverlay.classList.toggle('is-visible', isVisible);
-    popupOverlay.setAttribute('aria-hidden', isVisible ? 'false' : 'true');
+    overlay.classList.toggle('is-visible', isVisible);
+    overlay.setAttribute('aria-hidden', isVisible ? 'false' : 'true');
 }
 
-function OpenPopup() {
-    setPopupVisibility(true);
+function openOverlay(overlay) {
+    setOverlayVisibility(overlay, true);
 }
 
-function ClosePopup() {
-    setPopupVisibility(false);
+function closeOverlay(overlay) {
+    setOverlayVisibility(overlay, false);
 }
+
+overlays.forEach(({ element, closeSelector }) => {
+    if (!element) {
+        return;
+    }
+
+    element.setAttribute('aria-hidden', 'true');
+
+    element.querySelectorAll(closeSelector).forEach((trigger) => {
+        trigger.addEventListener('click', () => closeOverlay(element));
+    });
+
+    element.addEventListener('click', (event) => {
+        if (event.target === element) {
+            closeOverlay(element);
+        }
+    });
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') {
+        return;
+    }
+
+    overlays.forEach(({ element }) => {
+        if (element && element.classList.contains('is-visible')) {
+            closeOverlay(element);
+        }
+    });
+});
 
 if (popupOverlay) {
-    popupOverlay.setAttribute('aria-hidden', 'true');
-
-    const closeTriggers = popupOverlay.querySelectorAll('[data-popup-close]');
-
-    closeTriggers.forEach((trigger) => {
-        trigger.addEventListener('click', ClosePopup);
-    });
-
-    popupOverlay.addEventListener('click', (event) => {
-        if (event.target === popupOverlay) {
-            ClosePopup();
-        }
-    });
-
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && popupOverlay.classList.contains('is-visible')) {
-            ClosePopup();
-        }
-    });
-
     window.addEventListener('load', () => {
-        window.setTimeout(OpenPopup, 9000);
+        window.setTimeout(() => openOverlay(popupOverlay), 9000);
+    });
+}
+
+if (scheduleCallButton && calendlyOverlay) {
+    scheduleCallButton.addEventListener('click', () => {
+        closeOverlay(popupOverlay);
+        openOverlay(calendlyOverlay);
     });
 }
