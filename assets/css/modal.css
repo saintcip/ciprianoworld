@@ -123,11 +123,16 @@
 
 .popup-box-calendly {
     width: min(900px, 100%);
-    padding: 48px 36px 36px;
+    padding: 0;
+}
+
+.popup-box-calendly .popup-close {
+    top: 12px;
+    right: 12px;
 }
 
 .calendly-widget-wrap {
-    margin-top: 20px;
+    margin-top: 0;
 }
 
 .calendly-widget-wrap .calendly-inline-widget {
