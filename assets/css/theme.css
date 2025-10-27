@@ -1879,8 +1879,42 @@ body.tt-search-open .scrollbar-track {
 /* ------------------------------------------------------------- */
 
 #page-header {
-	position: relative;
-	z-index: 1;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+}
+
+.hero-video-wrap {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        z-index: 0;
+        pointer-events: none;
+        background-color: #000;
+}
+
+.hero-video-wrap::after {
+        position: absolute;
+        content: "";
+        inset: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, #000 100%);
+}
+
+.hero-video-embed {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 180%;
+        height: 120%;
+        transform: translate(-50%, -50%);
+}
+
+.hero-video-embed iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        opacity: 0.3;
+        pointer-events: none;
 }
 .page-header-inner,
 body.ph-image-on.ph-bg-image-on #page-header:not(.project-info-list-on) .page-header-inner {
@@ -2115,7 +2149,8 @@ body:not(.tt-boxed) .page-header-inner,
 /* Page header caption 
 ======================= */
 .ph-caption {
-	position: relative;
+        position: relative;
+        z-index: 1;
 }
 
 /* page header caption title */
@@ -7115,22 +7150,22 @@ button {
 }
 
 .tt-btn {
-	position: relative;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	height: 50px;
-	background-color: transparent;
-	margin: 15px 15px 15px 0;
-	text-align: center;
-	font-size: 16px;
-	font-weight: bold;
-	font-weight: 500;
-	overflow: hidden;
-	cursor: pointer;
-	border: none;
-	border-radius: 100px;
-	z-index: 9;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background-color: transparent;
+        margin: 15px 15px 15px 0;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        font-weight: 500;
+        overflow: hidden;
+        cursor: pointer;
+        border: none;
+        border-radius: 0;
+        z-index: 9;
 }
 .tt-btn:last-child {
 	margin-right: 0;
@@ -9830,7 +9865,7 @@ body:not(.tt-boxed) .tt-footer-inner,
 
 .footer-social-link {
         color: rgba(255, 255, 255, 0.35);
-        font-size: 24px;
+        font-size: 32px;
         transition: color 0.3s ease;
 }
 
