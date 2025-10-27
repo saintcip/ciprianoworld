@@ -9829,8 +9829,8 @@ body:not(.tt-boxed) .tt-footer-inner,
 }
 
 .footer-social-link {
-        color: #888;
-        font-size: 20px;
+        color: rgba(255, 255, 255, 0.35);
+        font-size: 24px;
         transition: color 0.3s ease;
 }
 
