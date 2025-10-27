@@ -122,20 +122,34 @@
 }
 
 .popup-box-calendly {
-    width: min(900px, 100%);
+    width: min(1000px, 100%);
     padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
 .popup-box-calendly .popup-close {
-    top: 12px;
-    right: 12px;
+    top: 16px;
+    right: 16px;
+    color: #ffffff;
+    z-index: 2;
 }
 
 .calendly-widget-wrap {
+    position: relative;
     margin-top: 0;
 }
 
 .calendly-widget-wrap .calendly-inline-widget {
     width: 100%;
-    min-height: 700px;
+    height: 80vh;
+    min-height: 520px;
+}
+
+@media (max-width: 600px) {
+    .calendly-widget-wrap .calendly-inline-widget {
+        height: 90vh;
+        min-height: 0;
+    }
 }
