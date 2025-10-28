@@ -9859,13 +9859,13 @@ body:not(.tt-boxed) .tt-footer-inner,
 .footer-social-icons {
         display: flex;
         justify-content: center;
-        gap: 24px;
+        gap: 32px;
         margin-top: 18px;
 }
 
 .footer-social-link {
         color: rgba(255, 255, 255, 0.35);
-        font-size: 32px;
+        font-size: 64px;
         transition: color 0.3s ease;
 }
 
@@ -10057,13 +10057,19 @@ body:not(.tt-boxed) .tt-footer-inner,
 
 }
 
-.signature-image {
-        display: block;
+.about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 }
 
-@media (max-width: 767px) {
-        .signature-image {
-                margin-left: auto;
-                margin-right: auto;
-        }
+.about-section .text-xxlg {
+        text-align: center;
+}
+
+.signature-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 }
