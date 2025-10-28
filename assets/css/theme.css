@@ -10073,18 +10073,3 @@ body:not(.tt-boxed) .tt-footer-inner,
         margin-left: auto;
         margin-right: auto;
 }
-
-.typed-paragraph {
-        position: relative;
-}
-
-.typed-char {
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.15s linear;
-}
-
-.typed-char.visible {
-        opacity: 1;
-        visibility: visible;
-}
