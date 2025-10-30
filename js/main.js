@@ -17,16 +17,6 @@ let mouseY = window.innerHeight / 2;
 //Keep the 3D object on a global variable so we can access it later
 let object;
 
-//Clock used to create time-based animations
-const clock = new THREE.Clock();
-
-//Parameters that will be used to create a subtle floating animation
-let initialY = null;
-let baseRotation = { x: 0, y: 0, z: 0 };
-let floatAmplitude = 0.5;
-let swayAmplitude = 0.05;
-const floatSpeed = 0.6;
-
 //OrbitControls allow the camera to move around the scene
 let controls;
 
@@ -43,24 +33,6 @@ loader.load(
     //If the file is loaded, add it to the scene
     object = gltf.scene;
     scene.add(object);
-
-    //Use the object's size to determine how much it should float
-    const box = new THREE.Box3().setFromObject(object);
-    const size = new THREE.Vector3();
-    box.getSize(size);
-
-    floatAmplitude = size.y > 0 ? Math.min(size.y * 0.02, 10) : 0.5;
-    swayAmplitude = size.y > 0 ? Math.min(size.y * 0.005, 0.25) : 0.05;
-
-    initialY = object.position.y;
-
-    //Flip the model so it appears upside down
-    object.rotation.z += Math.PI;
-    baseRotation = {
-      x: object.rotation.x,
-      y: object.rotation.y,
-      z: object.rotation.z,
-    };
   },
   function (xhr) {
     //While it is loading, log the progress
@@ -103,21 +75,9 @@ function animate() {
 
   //Make the eye move
   if (object && objToRender === "eye") {
-    //I've played with the constants here until it looked good
+    //I've played with the constants here until it looked good 
     object.rotation.y = -3 + mouseX / window.innerWidth * 3;
     object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
-  }
-
-  if (object) {
-    const elapsed = clock.getElapsedTime();
-    const floatOffset = Math.sin(elapsed * floatSpeed) * floatAmplitude;
-    object.position.y = (initialY !== null ? initialY : object.position.y) + floatOffset;
-
-    if (objToRender !== "eye") {
-      object.rotation.x = baseRotation.x + Math.sin(elapsed * floatSpeed * 0.6) * swayAmplitude;
-      object.rotation.y = baseRotation.y + Math.cos(elapsed * floatSpeed * 0.4) * swayAmplitude;
-      object.rotation.z = baseRotation.z + Math.sin(elapsed * floatSpeed * 0.3) * swayAmplitude * 0.5;
-    }
   }
   renderer.render(scene, camera);
 }
